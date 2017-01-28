@@ -1,0 +1,54 @@
+- vim-fsharp:
+    -> <leader>t - type check
+    -> <leader>d - goto declaration
+    -> <leader>s - go back
+    -> <leader>e - fsi input
+    -> <leader>i - send line / selection
+    -> FsiShow / FsiEvalBuffer / FsiClear
+~ Practival VIM [70/320]
+   -> INSERT <C-o><command> runs _1_ cmd and goes back to INSERT mode
+    -> <C-o> / <C-i> - back / forward navi (jump list)
+    -> INSERT <C-w> - usuwa poprzednie słowo
+    -> <C-v> (<C-q> na Windowsach) - VISUAL BLOCK MODE, w VsVim trzeba przemapować
+    -> gv - ostatnie zaznaczenie
+    -> o - w trybie VISUAL przeskakuję pomiędzy początkiem a końcem zaznaczenia
+~ Practival VIM [82/320]
+    -> q: - command line history buffer
+    -> q/ - search history
+    -> EX MODE <C-f> przechodzi do tego okna bezpośrednio
+~ Practival VIM [95/320]
+    -> :ls - lista bufferów
+    -> <C-^> - szybkie przełączanie pomiedzy 2 buforami
+    -> :bufdo/argdo - na wszystkich buforach / plikach z argumentów
+    -> :cd %:p:h - cd do katalogu otwartego pliku
+    -> :pwd - aktualny katalogu
+    -> :args **/*.js do otwieranie wielu plików
+    -> okna:
+        -> <C-w>s / v - split horyzontalny / wertykalny
+        -> <C-w>x - swap the current window with the next one
+        -> lub :split/:vsplit [filename]
+        -> nawigacja <C-w><C-w> (cycle) / <C-w>whjkl
+        -> <C-w>c / :close
+        -> <C-w>o / :only - zostawia tylko aktywne
+~ Practival VIM [118/320]
+    -> :edit %:h<Tab> - otwieranie względem katalogu aktualnego pliku
+    -> %% mam mapowanie, które rozwija ścieżkę do ww katalogu
+    -> pozycja spoczynkowa: jkl; -> nie przesuwać ręki!
+~ Practival VIM [Tip-53/129/320]
+    -> \ - last f(ind) in reverse (remapped from ",")
+    -> d/search - usuń do wyszukanego miejsca
+~ Practival VIM [Tip-56/135/320]
+    -> m[a..z] - lokalne zakładki, m[A..Z] globalne
+    -> '[a..Z] - skok do linii, `[a..Z] - skok dokładny (lepszy!)
+    -> zakładki działają w VsVim!
+    -> `` lub <C-o> - poprzednia pozycja przed skokiem
+        -> przydatne w połączeniu z % (np. zmiana rodzaju nawiasów)
+    -> `. - poprzednia zmiana
+~ Practival VIM [Tip-59/141/320]
+    -> <C-o> / <C-i>: skoki back / forward (patrz ``)
+    -> :jumps - lista skoków (historia nawigacji) - także pomiędzy plikami
+    -> H/M/L - top/middle/bottom ekranu
+    -> :changes - lista zmian
+    -> g; / g, - nawigacja po liście zmian
+    -> `. - skok do ostatniej zmiany
+
